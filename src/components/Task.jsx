@@ -54,10 +54,10 @@ const Task = ({ task, onEditTask, onDeleteTask, onToggleCompleted }) => {
           </div>
           <div className=" flex space-x-3">
             <button type="submit">
-              <MdOutlineDone size={20} className=" hover:text-green-400 text-gray-500" />
+              <MdOutlineDone size={20} className=" text-gray-500" />
             </button>
             <button type="button" onClick={handleCancel}>
-              <RxCross2 size={20} className=" text-gray-500 hover:text-orange-400" />
+              <RxCross2 size={20} className=" text-gray-500" />
             </button>
           </div>
         </form>
@@ -85,13 +85,13 @@ const Task = ({ task, onEditTask, onDeleteTask, onToggleCompleted }) => {
             <button onClick={handleEdit}>
               <CiEdit
                 size={20}
-                className=" text-gray-500 hover:text-yellow-500"
+                className=" text-gray-500"
               />
             </button>
             <button onClick={handleDelete}>
               <AiOutlineDelete
                 size={18}
-                className=" text-gray-500 hover:text-red-500"
+                className=" text-gray-500"
               />
             </button>
           </div>

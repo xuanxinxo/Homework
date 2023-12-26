@@ -16,12 +16,12 @@ const AddTaskForm = ({ onAddTask, darkTheme }) => {
     <form onSubmit={handleSubmit}>
       <div
         className={` ${
-          darkTheme ? "bg-gray-800" : "bg-white"
+          darkTheme ?"" : "bg-white"
         } w-full  flex space-x-2 items-center  rounded-lg px-4`}
       >
         <CiCirclePlus size={28} className="px-0 text-gray-500" />
         <input
-          className=" bg-transparent w-full h-fit p-1 py-4 text-lg"
+          className=" bg-transparent w-full h-fit p-1 py-5 text-lg"
           type="text"
           placeholder="Add a new task..."
           value={title}
